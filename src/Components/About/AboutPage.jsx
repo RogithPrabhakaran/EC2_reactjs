@@ -22,45 +22,39 @@ const AboutPage = () => {
   return (
     <>
       <div className="aboutSection">
-        <h2>About Uomo</h2>
+        <h2>About RETRO</h2>
         <img src={about1} alt="" />
         <div className="aboutContent">
           <h3>Our Story</h3>
           <h4>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            We define fashion, we are the best at what we do, we are RETRO.
           </h4>
           <p>
-            Saw wherein fruitful good days image them, midst, waters upon, saw.
-            Seas lights seasons. Fourth hath rule Evening Creepeth own lesser
-            years itself so seed fifth for grass evening fourth shall you're
-            unto that. Had. Female replenish for yielding so saw all one to
-            yielding grass you'll air sea it, open waters subdue, hath. Brought
-            second Made. Be. Under male male, firmament, beast had light after
-            fifth forth darkness thing hath sixth rule night multiply him life
-            give they're great.
+            Our vision is to be the best and most reliable online clothing store
+            in the world. We are committed to providing our customers with the best
+            quality products at the most affordable prices. We are dedicated to providing
+            our customers with the best shopping experience possible. We are committed to providing
+            our customers with the best customer service possible. We are committed to providing our customers
+            with the best shopping experience possible. We are committed to providing our customers with the best quality
+            products at the most affordable prices.
           </p>
           <div className="content1">
             <div className="contentBox">
               <h5>Our Mission</h5>
               <p>
-                Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
+                 Bring back the Vintage Fashion to the Modern World.
               </p>
             </div>
             <div className="contentBox">
               <h5>Our Vision</h5>
               <p>
-                Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
+                To be the best and most reliable online clothing store in the world.
               </p>
             </div>
           </div>
           <div className="content2">
             <div className="imgContent">
-              <img src={about2} alt="" />
+              <img src={about2} alt="about2" />
             </div>
             <div className="textContent">
               <h5>The Company</h5>
