@@ -9,6 +9,7 @@
   position: sticky;
   top: 0;
   box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
+  max-height: 3px;
 }
 
 .logoLinkContainer {

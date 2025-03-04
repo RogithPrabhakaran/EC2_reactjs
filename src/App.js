@@ -4,10 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 import Home from "../src/Pages/Home";
-import About from "../src/Pages/About";
 import Shop from "../src/Pages/Shop";
 import Contact from "../src/Pages/Contact";
-import Blog from "../src/Pages/Blog";
 import Header from "../src/Components/Header/Navbar";
 import Footer from "../src/Components/Footer/Footer";
 import ProductDetails from "./Pages/ProductDetails";
@@ -30,10 +28,8 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
           <Route path="/product" element={<ProductDetails />} />
           <Route path="/loginSignUp" element={<Authentication />} />
           <Route path="/resetPassword" element={<ResetPass />} />
