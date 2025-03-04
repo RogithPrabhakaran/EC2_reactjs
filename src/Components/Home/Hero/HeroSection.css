@@ -14,60 +14,60 @@
   gap: 20px;
   width: 50%;
 }
-
-.sectionleft p {
-  position: relative;
-  padding-left: 50px;
-  color: #c22928;
-  text-transform: uppercase;
+.sectionleft h5{
+  color:#EE1C47;
+  font-size:16px;
+  text-transform: capitalize;
   font-weight: 500;
 }
 
-.sectionleft p::before {
-  content: "";
-  display: block;
-  width: 35px;
-  height: 2px;
-  background-color: #c32929;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.sectionleft p {
+  position: relative;
+  color:#333c56;
+  font-size:20px;
+  font-style:italic;
+  font-weight: 500;
 }
+
 
 .sectionleft h1 {
   font-size: 70px;
   text-transform: uppercase;
-  font-weight: 700;
+  color: #000;
+  font-size: 65px;
+  text-transform:capitalize;
+  line-height:1.1;
+  font-weight:600;
 }
 
-.heroLink {
-  display: flex;
+.heroLink h5{
+  border:2px solid #111;
+  padding:12px 12px;
+  margin-right: 450px;
+  display:inline-block;
+  transition:all .42s ease;
+  color:#111;
+  font-size:16px;
+  font-weight:500;
+  text-transform:capitalize;
+  text-decoration: none;
 }
 
+.heroLink h5:hover{
+  background-color:#111;
+  color:#fff;
+}
 .sectionleft a {
   text-decoration: none;
   color: black;
 }
 
-.sectionleft a {
-  position: relative;
+.heroLink i{
+  vertical-align: middle;
+  margin-left: 10px;
+  font-size: 20px;
+  margin-top: 2px;
 }
-
-.sectionleft a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 75%;
-  border-bottom: 2px solid black;
-  transition: width 0.2s ease;
-}
-
-.sectionleft a:hover::after {
-  width: 100%;
-}
-
 .sectionleft h5 {
   display: flex;
   font-size: 14px;

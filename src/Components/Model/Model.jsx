@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 export function Model({ color, ...props }) {
-  const { nodes, materials } = useGLTF("/shirt_baked_2.glb");
+  const { nodes, materials } = useGLTF("/hp_omen_laptop.glb");
   const modelRef = useRef();
 
   const [scale, setScale] = useState([1, 1, 1]);

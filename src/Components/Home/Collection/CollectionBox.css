@@ -8,14 +8,15 @@
 }
 
 .collectionLeft {
-  background-image: url("../../../Assets/Collection/collection1.jpg");
+  background-image: url("../../../Assets/Collection/collection1.jpeg");
   background-size: cover;
   background-position: center center;
   padding: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  background-color: #eff0f1;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #2e3032;
 }
 
 .col-link {
@@ -47,13 +48,14 @@
 }
 
 .collectionTop {
-  background-image: url("../../../Assets/Collection/collection2.jpg");
+  background-image: url("../../../Assets/Collection/collection2.jpeg");
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: 30px;
+  align-items: flex-start;
   background-color: #eff0f1;
 }
 
@@ -64,14 +66,16 @@
 }
 
 .box1 {
-  background-image: url("../../../Assets/Collection/collection3.jpg");
+  background-image: url("../../../Assets/Collection/collection3.jpeg");
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: 30px;
-  background-color: #eff0f1;
+  align-items: flex-start;
+  background-color: #798da0;
+  color: #eff0f1;
 }
 
 .box2 {
@@ -91,12 +95,13 @@
 
 .col-h3 {
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 16px;
   font-weight: 500;
 }
 
 .col-h3 span {
   font-weight: bolder;
+  font-size: 26px;
 }
 
 .collection h5 {
