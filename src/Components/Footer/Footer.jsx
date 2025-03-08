@@ -31,7 +31,7 @@ const Footer = () => {
         <div className="footer__container">
           <div className="footer_left">
             <div className="footer_logo_container">
-              <img src={logo} alt="" Z />
+              <img src={logo} style={{width:"200px"}} alt=""/>
             </div>
 
             <p>No.17 4th Main Road, Besant Nagar, Chennai</p>

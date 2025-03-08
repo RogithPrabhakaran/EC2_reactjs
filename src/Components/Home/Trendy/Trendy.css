@@ -92,8 +92,8 @@
 
 .trendyProductImages {
   position: relative;
-  width: 258px;
-  height: 320px;
+  width: 310px;
+  height: 220px;
   overflow: hidden;
   -webkit-transition: all 0.2s cubic-bezier(0.99, 0.99, 0, 0.61);
   transition: 0.3s linear;

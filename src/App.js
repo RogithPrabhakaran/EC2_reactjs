@@ -15,13 +15,11 @@ import Authentication from "./Pages/Authentication";
 import ResetPass from "./Components/Authentication/Reset/ResetPass";
 import TermsConditions from "./Pages/TermsConditions";
 import ShoppingCart from "./Components/ShoppingCart/ShoppingCart";
-import Popup from "./Components/PopupBanner/Popup";
 import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
     <>
-      <Popup />
       <ScrollToTop />
       <BrowserRouter>
         <Header />

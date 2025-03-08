@@ -5,10 +5,8 @@ import Zoom from "@mui/material/Zoom";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../../Features/Cart/cartSlice";
 
-import product1 from "../../../Assets/ProductDetail/productdetail-1.jpg";
-import product2 from "../../../Assets/ProductDetail/productdetail-2.jpg";
-import product3 from "../../../Assets/ProductDetail/productdetail-3.jpg";
-import product4 from "../../../Assets/ProductDetail/productdetail-4.jpg";
+import product1 from "../../../Assets/ProductDetail/productdetail_1.png";
+import product2 from "../../../Assets/ProductDetail/productdetail_2.png";
 
 import { GoChevronLeft } from "react-icons/go";
 import { GoChevronRight } from "react-icons/go";
@@ -25,7 +23,7 @@ import "./Product.css";
 const Product = () => {
   // Product images Gallery
 
-  const productImg = [product1, product2, product3, product4];
+  const productImg = [product1, product2];
   const [currentImg, setCurrentImg] = useState(0);
 
   const prevImg = () => {
@@ -67,21 +65,12 @@ const Product = () => {
 
   // Product Sizes
 
-  const sizes = ["XS", "S", "M", "L", "XL"];
-  const sizesFullName = [
-    "Extra Small",
-    "Small",
-    "Medium",
-    "Large",
-    "Extra Large",
-  ];
-  const [selectSize, setSelectSize] = useState("S");
 
   // Product Colors
 
-  const [highlightedColor, setHighlightedColor] = useState("#C8393D");
-  const colors = ["#222222", "#C8393D", "#E4E4E4"];
-  const colorsName = ["Black", "Red", "Grey"];
+  const [highlightedColor, setHighlightedColor] = useState("#222222");
+  const colors = ["#222222","#E4E4E4"];
+  const colorsName = ["Black", "Grey"];
 
   // Product Detail to Redux
 
@@ -138,8 +127,6 @@ const Product = () => {
             <div className="productThumb">
               <img src={product1} onClick={() => setCurrentImg(0)} alt="" />
               <img src={product2} onClick={() => setCurrentImg(1)} alt="" />
-              <img src={product3} onClick={() => setCurrentImg(2)} alt="" />
-              <img src={product4} onClick={() => setCurrentImg(3)} alt="" />
             </div>
             <div className="productFullImg">
               <img src={productImg[currentImg]} alt="" />
@@ -171,7 +158,7 @@ const Product = () => {
               </div>
             </div>
             <div className="productName">
-              <h1>Lightweight Puffer Jacket With a Hood</h1>
+              <h1>Dell XPS 17</h1>
             </div>
             <div className="productRating">
               <FaStar color="#FEC78A" size={10} />
@@ -182,7 +169,7 @@ const Product = () => {
               <p>8k+ reviews</p>
             </div>
             <div className="productPrice">
-              <h3>$90</h3>
+              <h3>₹49800</h3>
             </div>
             <div className="productDescription">
               <p>
@@ -194,28 +181,6 @@ const Product = () => {
             </div>
             <div className="productSizeColor">
               <div className="productSize">
-                <p>Sizes</p>
-                <div className="sizeBtn">
-                  {sizes.map((size, index) => (
-                    <Tooltip
-                      key={size}
-                      title={sizesFullName[index]}
-                      placement="top"
-                      TransitionComponent={Zoom}
-                      enterTouchDelay={0}
-                      arrow
-                    >
-                      <button
-                        style={{
-                          borderColor: selectSize === size ? "#000" : "#e0e0e0",
-                        }}
-                        onClick={() => setSelectSize(size)}
-                      >
-                        {size}
-                      </button>
-                    </Tooltip>
-                  ))}
-                </div>
               </div>
               <div className="productColor">
                 <p>Color</p>
@@ -275,17 +240,6 @@ const Product = () => {
                 <PiShareNetworkLight size={22} />
                 <p>Share</p>
               </div>
-            </div>
-            <div className="productTags">
-              <p>
-                <span>SKU: </span>N/A
-              </p>
-              <p>
-                <span>CATEGORIES: </span>Casual & Urban Wear, Jackets, Men
-              </p>
-              <p>
-                <span>TAGS: </span>biker, black, bomber, leather
-              </p>
             </div>
           </div>
         </div>

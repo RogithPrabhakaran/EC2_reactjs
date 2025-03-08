@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./AdditionalInfo.css";
 
-import user1 from "../../../Assets/Users/user1.jpeg";
-import user2 from "../../../Assets/Users/user2.jpeg";
 
 import { FaStar } from "react-icons/fa";
 import Rating from "@mui/material/Rating";
@@ -30,7 +28,7 @@ const AdditionalInfo = () => {
                 onClick={() => handleTabClick("aiTab2")}
                 className={activeTab === "aiTab2" ? "aiActive" : ""}
               >
-                Additional Information
+                Specification
               </p>
               <p
                 onClick={() => handleTabClick("aiTab3")}
@@ -62,38 +60,6 @@ const AdditionalInfo = () => {
                     dicta sunt explicabo.
                   </p>
                 </div>
-                <div className="descriptionParaGrid">
-                  <div className="descriptionPara">
-                    <h3>Why choose product?</h3>
-                    <p>
-                      <ul>
-                        <li>Creat by cotton fibric with soft and smooth</li>
-                        <li>
-                          Simple, Configurable (e.g. size, color, etc.), bundled
-                        </li>
-                        <li>Downloadable/Digital Products, Virtual Products</li>
-                      </ul>
-                    </p>
-                  </div>
-                  <div className="descriptionPara">
-                    <h3>Sample Number List</h3>
-                    <p>
-                      <ol>
-                        <li>Creat by cotton fibric with soft and smooth</li>
-                        <li>
-                          Simple, Configurable (e.g. size, color, etc.), bundled
-                        </li>
-                        <li>Downloadable/Digital Products, Virtual Products</li>
-                      </ol>
-                    </p>
-                  </div>
-                </div>
-                <div className="descriptionPara">
-                  <h3>Lining</h3>
-                  <p style={{ marginTop: "-10px" }}>
-                    100% Polyester, Main: 100% Polyester.
-                  </p>
-                </div>
               </div>
             )}
 
@@ -103,23 +69,18 @@ const AdditionalInfo = () => {
               <div className="aiTabAdditionalInfo">
                 <div className="additionalInfoContainer">
                   <h6>Weight</h6>
-                  <p> 1.25 kg</p>
+                  <p> 2.25 kg</p>
                 </div>
-                <div className="additionalInfoContainer">
-                  <h6>Dimensions</h6>
-                  <p> 90 x 60 x 90 cm</p>
-                </div>
-                <div className="additionalInfoContainer">
-                  <h6>Size</h6>
-                  <p> XS, S, M, L, XL</p>
-                </div>
+                
                 <div className="additionalInfoContainer">
                   <h6>Color</h6>
-                  <p> Black, Orange, White</p>
+                  <p> Black, Grey</p>
                 </div>
                 <div className="additionalInfoContainer">
                   <h6>Storage</h6>
-                  <p> Relaxed fit shirt-style dress with a rugged</p>
+                  <p> 1TB </p>
+                  <h6>RAM</h6>
+                  <p> 16BG </p>
                 </div>
               </div>
             )}
@@ -136,12 +97,12 @@ const AdditionalInfo = () => {
                       style={{ borderBottom: "1px solid #e4e4e4" }}
                     >
                       <div className="userReviewImg">
-                        <img src={user1} alt="" />
+                        <img src="" alt="" />
                       </div>
                       <div className="userReviewContent">
                         <div className="userReviewTopContent">
                           <div className="userNameRating">
-                            <h6>Janice Miller</h6>
+                            <h6>Ram</h6>
                             <div className="userRating">
                               <FaStar color="#FEC78A" size={10} />
                               <FaStar color="#FEC78A" size={10} />
@@ -159,22 +120,20 @@ const AdditionalInfo = () => {
                           style={{ marginBottom: "30px" }}
                         >
                           <p>
-                            Nam libero tempore, cum soluta nobis est eligendi
-                            optio cumque nihil impedit quo minus id quod maxime
-                            placeat facere possimus, omnis voluptas assumenda
-                            est…
+                            Good quality, good price, good service. I will
+                            definitely come back here again. Highly recommended.
                           </p>
                         </div>
                       </div>
                     </div>
                     <div className="userReview">
                       <div className="userReviewImg">
-                        <img src={user2} alt="" />
+                        <img src="" alt="" />
                       </div>
                       <div className="userReviewContent">
                         <div className="userReviewTopContent">
                           <div className="userNameRating">
-                            <h6>Benjam Porter</h6>
+                            <h6>Priya</h6>
                             <div className="userRating">
                               <FaStar color="#FEC78A" size={10} />
                               <FaStar color="#FEC78A" size={10} />
@@ -184,15 +143,12 @@ const AdditionalInfo = () => {
                             </div>
                           </div>
                           <div className="userDate">
-                            <p>April 12, 2023</p>
+                            <p>April 27, 2024</p>
                           </div>
                         </div>
                         <div className="userReviewBottomContent">
                           <p>
-                            Nam libero tempore, cum soluta nobis est eligendi
-                            optio cumque nihil impedit quo minus id quod maxime
-                            placeat facere possimus, omnis voluptas assumenda
-                            est…
+                            Amazing product, amazing quality, amazing service.
                           </p>
                         </div>
                       </div>
@@ -201,8 +157,7 @@ const AdditionalInfo = () => {
                   <div className="userNewReview">
                     <div className="userNewReviewMessage">
                       <h5>
-                        Be the first to review “Lightweight Puffer Jacket With a
-                        Hood”
+                        Be the first to review “Dell XPS 17”
                       </h5>
                       <p>
                         Your email address will not be published. Required

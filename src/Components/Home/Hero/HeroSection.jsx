@@ -1,19 +1,9 @@
-import React, { useState } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-
 import "./HeroSection.css";
 import laptopImage from "../../../Assets/hpomen.png";
 import { Link } from "react-router-dom";
 
 
 const HeroSection = () => {
-  const [tshirtColor, setTshirtColor] = useState("red");
-
-  const changeColor = (color) => {
-    setTshirtColor(color);
-  };
-
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

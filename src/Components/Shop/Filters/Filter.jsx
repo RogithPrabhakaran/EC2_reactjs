@@ -9,19 +9,19 @@ import { BiSearch } from "react-icons/bi";
 import Slider from "@mui/material/Slider";
 
 const Filter = () => {
-  const [value, setValue] = useState([20, 69]);
+  const [value, setValue] = useState([12, 100]);
 
   const [selectedColors, setSelectedColors] = useState([]);
   const [selectedSizes, setSelectedSizes] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [brandsData] = useState([
-    { name: "Adidas", count: 2 },
-    { name: "Balmain", count: 7 },
-    { name: "Balenciaga", count: 10 },
-    { name: "Burberry", count: 39 },
-    { name: "Kenzo", count: 95 },
-    { name: "Givenchy", count: 1092 },
-    { name: "Zara", count: 48 },
+    { name: "Apple", count: 2 },
+    { name: "Dell", count: 7 },
+    { name: "HP", count: 10 },
+    { name: "Samsung", count: 39 },
+    { name: "Asus", count: 95 },
+    { name: "Microsoft", count: 1092 },
+    { name: "Acer", count: 48 },
   ]);
 
   const handleColorChange = (color) => {
@@ -49,32 +49,23 @@ const Filter = () => {
   );
 
   const filterCategories = [
-    "Dresses",
-    "Shorts",
-    "Sweatshirts",
-    "Swimwear",
-    "Jackets",
-    "T-Shirts & Tops",
-    "Jeans",
-    "Trousers",
-    "Men",
-    "Jumpers & Cardigans",
+    "Laptop",
+    "Mobile",
+    "Gaming Console",
+    "Accessories",
+    "Camera",
+    "Smartwatch",
+    "Tablet",
+    "Headphones",
+    "Speaker",
+    "Printer",
   ];
-
   const filterColors = [
     "#0B2472",
-    "#D6BB4F",
     "#282828",
-    "#B0D6E8",
-    "#9C7539",
-    "#D29B47",
-    "#E5AE95",
-    "#D76B67",
     "#BABABA",
-    "#BFDCC4",
   ];
 
-  const filterSizes = ["XS", "S", "M", "L", "XL", "XXL"];
 
   return (
     <div>
@@ -82,7 +73,7 @@ const Filter = () => {
         <div className="filterCategories">
           <Accordion defaultExpanded disableGutters elevation={0}>
             <AccordionSummary
-              expandIcon={<IoIosArrowDown size={20} />}
+              expandIcon={<IoIosArrowDown size={2} />}
               aria-controls="panel1-content"
               id="panel1-header"
               sx={{ padding: 0, marginBottom: 2 }}
@@ -123,33 +114,6 @@ const Filter = () => {
                   ))}
                 </div>
               }
-            </AccordionDetails>
-          </Accordion>
-        </div>
-        <div className="filterSizes">
-          <Accordion defaultExpanded disableGutters elevation={0}>
-            <AccordionSummary
-              expandIcon={<IoIosArrowDown size={20} />}
-              aria-controls="panel1-content"
-              id="panel1-header"
-              sx={{ padding: 0, marginBottom: 2 }}
-            >
-              <h5 className="filterHeading">Sizes</h5>
-            </AccordionSummary>
-            <AccordionDetails sx={{ padding: 0 }}>
-              <div className="sizeButtons">
-                {filterSizes.map((size, index) => (
-                  <button
-                    key={index}
-                    className={`sizeButton ${
-                      selectedSizes.includes(size) ? "selected" : ""
-                    }`}
-                    onClick={() => handleSizeChange(size)}
-                  >
-                    {size}
-                  </button>
-                ))}
-              </div>
             </AccordionDetails>
           </Accordion>
         </div>
@@ -233,10 +197,10 @@ const Filter = () => {
               <div className="filterSliderPrice">
                 <div className="priceRange">
                   <p>
-                    Min Price: <span>${value[0]}</span>
+                    Min Price: <span>₹{value[0]}k</span>
                   </p>
                   <p>
-                    Max Price: <span>${value[1]}</span>
+                    Max Price: <span>₹{value[1]}k</span>
                   </p>
                 </div>
               </div>
